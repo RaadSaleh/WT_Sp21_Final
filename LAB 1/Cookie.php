@@ -5,7 +5,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     $id=$_POST["id"];
     $pass=$_POST["pass"];
     if($id == "ghost" && $pass == "asm01"){
-        header("Location: dash.php");
+		setcookie("user",$id,time()+150,"/");
+        header("Location: cookdash.php");
+		
     }
 }
 ?>
