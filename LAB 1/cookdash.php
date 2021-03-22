@@ -2,6 +2,7 @@
     session_start();
 	if(!isset($_COOKIE["user"])){
 		header("Location: cookie.php");
+	}
 ?>
 <html>
 <body>
